@@ -20,6 +20,7 @@ body {
     overflow-x: hidden;
     background-color: rgb(0, 0, 0);
     color: white;
+  
 }
 
 header {
@@ -35,7 +36,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 10;
+  
    
 }
 
@@ -61,6 +63,8 @@ nav a {
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
+    z-index: 10;
+    position: relative;
 }
 
 nav a:hover,
@@ -106,9 +110,13 @@ nav a.active {
 
 }
 
-section{
+section {
     min-height: 100vh;
     padding: 5rem 9% 5rem;
+    z-index: 10;
+
+   
+  
 }
 
 .home {
@@ -117,6 +125,7 @@ section{
     align-items: center;
     gap: 8rem;
     background-color: black;
+   
 }
 
 .home .home-content h1 {
@@ -157,6 +166,7 @@ span {
     font-weight: 500;
 }
 
+
 .social-icons a{
     display: inline-flex;
     justify-content: center;
@@ -170,6 +180,10 @@ span {
     margin: 9rem 1.5rem 7rem 0;
     transition: 0.3s ease;
     color: #43103a;
+    z-index: 10;
+    position: relative;
+    
+   
 }
 
 .social-icons a:hover{
@@ -188,7 +202,7 @@ span {
     background: #111;
     cursor: pointer;
     position: relative;
-    z-index: 0;
+    z-index: 50;
     border-radius: 10px;
 
 
@@ -340,11 +354,17 @@ span {
 }
 
 canvas {
-    display: block;
-    position: absolute;
+    /* display: flexbox; */
+    /* height: 100%; */
+    z-index: 1;
+    position: fixed;
+    top: 0px;
     animation:  1s forwards;
    
 }
 
+.card {
+height: 500px;
+}
 
 
